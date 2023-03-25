@@ -19,7 +19,7 @@ const Hero = () => {
 					<p className={styles.description}>
 						We enjoy creating delightful, human-centered digital experiences
 					</p>
-					<Button>Learn More</Button>
+					<Button width={100}>Learn More</Button>
 				</div>
 				<div className={styles.rightSection}>
 					<img className={styles.moonImage} src={moon} alt='' />

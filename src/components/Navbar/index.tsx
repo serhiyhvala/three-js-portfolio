@@ -22,7 +22,7 @@ const Navbar = () => {
 				</div>
 				<div className={styles.icons}>
 					<img className={styles.searchIcon} src={search} alt='' />
-					<Button>Hire Now</Button>
+					<Button width={100}>Hire Now</Button>
 				</div>
 			</div>
 		</div>

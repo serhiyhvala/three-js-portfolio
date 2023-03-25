@@ -1,4 +1,29 @@
-.container {
+.container, .section {
   height: 100vh;
   scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 1400px;
+}
+
+
+.leftSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.rightSide {
+  flex: 1;
+}
+
+.listItem{
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 }

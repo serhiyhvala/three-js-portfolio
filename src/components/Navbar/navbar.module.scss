@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.links, .icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.listItem, .searchIcon, .button, .logo {
+  cursor: pointer;
+}
+
+.searchIcon {
+  width: 20px;
+}
+
+.button {
+  width: 100px;
+  padding: 10px;
+  background-color: #da4ea2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}

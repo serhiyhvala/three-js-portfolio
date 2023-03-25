@@ -10,7 +10,11 @@ const Works = () => {
 				<div className={styles.leftSide}>
 					<List flexDirection='column'>
 						{WorksList.map(item => (
-							<li className={styles.listItem} key={item.id}>
+							<li
+								className={styles.listItem}
+								key={item.id}
+								item-name={item.title}
+							>
 								{item.title}
 							</li>
 						))}

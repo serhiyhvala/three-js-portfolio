@@ -1,5 +1,6 @@
 import logo from '@img/logo.png'
 import search from '@img/search.png'
+import Button from '@ui/Button'
 
 import styles from './navbar.module.scss'
 
@@ -18,7 +19,7 @@ const Navbar = () => {
 				</div>
 				<div className={styles.icons}>
 					<img className={styles.searchIcon} src={search} alt='' />
-					<button className={styles.button}>Hire Now</button>
+					<Button>Hire Now</Button>
 				</div>
 			</div>
 		</div>

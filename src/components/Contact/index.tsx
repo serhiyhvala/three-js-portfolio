@@ -1,3 +1,4 @@
+import Map from '@components/Map'
 import Button from '@ui/Button'
 
 import styles from './contact.module.scss'
@@ -29,7 +30,9 @@ const Contact = () => {
 						<Button width='100%'>Send</Button>
 					</form>
 				</div>
-				<div className={styles.rightSide}></div>
+				<div className={styles.rightSide}>
+					<Map />
+				</div>
 			</div>
 		</div>
 	)

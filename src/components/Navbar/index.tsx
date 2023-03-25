@@ -1,3 +1,4 @@
+import { NavbarList } from '@constants/index'
 import logo from '@img/logo.png'
 import search from '@img/search.png'
 import Button from '@ui/Button'
@@ -11,10 +12,11 @@ const Navbar = () => {
 				<div className={styles.links}>
 					<img className={styles.logo} src={logo} alt='' />
 					<ul className={styles.list}>
-						<li className={styles.listItem}>Home</li>
-						<li className={styles.listItem}>Studio</li>
-						<li className={styles.listItem}>Works</li>
-						<li className={styles.listItem}>Contact</li>
+						{NavbarList.map(item => (
+							<li className={styles.listItem} key={item.id}>
+								{item.title}
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className={styles.icons}>

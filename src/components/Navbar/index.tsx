@@ -2,6 +2,7 @@ import { NavbarList } from '@constants/index'
 import logo from '@img/logo.png'
 import search from '@img/search.png'
 import Button from '@ui/Button'
+import List from '@ui/List'
 
 import styles from './navbar.module.scss'
 
@@ -11,13 +12,13 @@ const Navbar = () => {
 			<div className={styles.section}>
 				<div className={styles.links}>
 					<img className={styles.logo} src={logo} alt='' />
-					<ul className={styles.list}>
+					<List>
 						{NavbarList.map(item => (
 							<li className={styles.listItem} key={item.id}>
 								{item.title}
 							</li>
 						))}
-					</ul>
+					</List>
 				</div>
 				<div className={styles.icons}>
 					<img className={styles.searchIcon} src={search} alt='' />

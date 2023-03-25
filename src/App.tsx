@@ -1,9 +1,19 @@
-const App = () => {
-  return (
-      <div>
-        App
-      </div>
-  );
-};
+import AboutUs from '@components/AboutUs'
+import Contact from '@components/Contact'
+import Hero from '@components/Hero'
+import Works from '@components/Works'
 
-export default App;
+import styles from './app.module.scss'
+
+const App = () => {
+	return (
+		<div className={styles.container}>
+			<Hero />
+			<AboutUs />
+			<Works />
+			<Contact />
+		</div>
+	)
+}
+
+export default App
